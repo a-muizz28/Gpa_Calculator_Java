@@ -33,13 +33,13 @@ public class GpaCalculator implements ActionListener {
     // Method to create the GUI
     public void createGui() {
         // Initialize the JFrame
-        frame = new JFrame("Gpa Calculator");
+        frame = new JFrame("SGpa Calculator");
         frame.setSize(400, 500);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(null);
 
         // Add header label
-        header = new JLabel("Gpa Calculator");
+        header = new JLabel("SGpa Calculator");
         header.setBounds(82, 25, 250, 50);
         header.setFont(header_font);
         header.setForeground(Color.BLUE);
@@ -127,7 +127,7 @@ public class GpaCalculator implements ActionListener {
         }
 
         // Add a button to calculate GPA
-        JButton calculateButton = new JButton("Calculate GPA");
+        JButton calculateButton = new JButton("Calculate SGPA");
         calculateButton.setBounds(60, y, 250, 30);
         calculateButton.setFont(myfont);
         calculateButton.addActionListener(e -> calculateGPA());
@@ -170,6 +170,6 @@ public class GpaCalculator implements ActionListener {
         UIManager.put("OptionPane.buttonFont", new Font("Arial", Font.BOLD, 20));
 
         // Show the final GPA in a message dialog
-        JOptionPane.showMessageDialog(frame, "Your GPA is: " + String.format("%.2f", finalGPA));
+        JOptionPane.showMessageDialog(frame, "Your SGPA is: " + String.format("%.2f", finalGPA));
     }
 }
